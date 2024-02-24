@@ -16,7 +16,10 @@ const cardData = [
 
 const Gallery: React.FC = () => {
   return (
-    <div className="grid grid-cols-3 gap-x-7 gap-y-1 mt-7 mx-sm:grid max-sm:grid-cols-1 max-sm:w-[100%] md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
+    <div
+      id="snapshots"
+      className="grid grid-cols-3 gap-x-7 gap-y-1 mt-7 mx-sm:grid max-sm:grid-cols-1 max-sm:w-[100%] md:grid md:grid-cols-2 lg:grid lg:grid-cols-3"
+    >
       {cardData.map((card, index) => (
         <Card key={index} title={card.title} imageUrl={card.imageUrl} />
       ))}

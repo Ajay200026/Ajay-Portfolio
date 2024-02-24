@@ -1,4 +1,4 @@
-// pages/index.tsx
+import Image from "next/image";
 import React from "react";
 import ContactForm from "../component-file/ContactForm";
 
@@ -7,9 +7,11 @@ const MainContact: React.FC = () => {
     <div className="container w-full p-8 flex max-sm:flex max-sm:flex-col max-sm:w-[100%] md:w-[100%] md:flex ">
       <div className="flex justify-center items-center mb-8">
         {/* Your image goes here */}
-        <img
+        <Image
           src="/contact.png" // Replace with the path to your image
           alt="Portfolio Image"
+          width={500} // Set the desired width
+          height={300} // Set the desired height
           className="lg:max-w-[500px] h-auto rounded-md max-sm:w-[100%] md:max-w-[350px]"
         />
       </div>

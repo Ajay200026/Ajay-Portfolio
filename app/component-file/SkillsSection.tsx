@@ -1,6 +1,7 @@
 "use client";
 // pages/SkillsSection.js
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import React, { useState } from "react";
 
 interface Skill {
@@ -48,13 +49,13 @@ const TabContent: React.FC<{ activeTab: number }> = ({ activeTab }) => {
           className="p-4  rounded-md flex items-center"
         >
           {/* Image */}
-          <img
+          <Image
             src={skill.image}
             alt={skill.title}
             className="mr-4 rounded-md"
-            style={{ maxWidth: "100px", height: "auto", objectFit: "contain" }}
+            width={100}
+            height={100}
           />
-
           {/* Skill Information */}
           <div>
             <h3 className="text-lg font-semibold mb-2 text-white font-mono">

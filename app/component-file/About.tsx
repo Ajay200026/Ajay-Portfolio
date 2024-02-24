@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Image from "next/image";
 import { useState } from "react";
 import Modal from "./Modal";
 
@@ -24,10 +25,12 @@ const About = () => {
         <motion.div className="p-8 bg-transparentshadow-md rounded-md flex items-center max-sm:mt-[15rem] max-sm:flex-col max-sm:items-center max-sm:justify-center">
           <div className="mr-8">
             {/* Your image code goes here */}
-            <img
-              src="./img3.png"
-              alt="Your Image"
-              className="w-[600px] h-[300px] rounded-lg  max-sm:w-[250px]  max-sm:ml-[2rem] max-sm:h-[250px]  max-sm:rounded-full  md:h-[200px]"
+            <Image
+              src="/img3.png"
+              alt="Image"
+              width={600}
+              height={300}
+              className="w-[600px] h-[300px] rounded-lg max-sm:w-[250px] max-sm:ml-[2rem] max-sm:h-[250px] max-sm:rounded-full md:h-[200px]"
             />
           </div>
           <div>

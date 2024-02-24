@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 
 interface ImageDetails {
@@ -21,7 +22,7 @@ const EducationGallery: React.FC<EducationGalleryProps> = ({ images }) => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-sm:w-[100%]">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 max-sm:w-[100%]">
       {images.map((imageDetails, index) => (
         <motion.div
           key={index}
@@ -29,10 +30,12 @@ const EducationGallery: React.FC<EducationGalleryProps> = ({ images }) => {
           whileHover={{ scale: 1.05 }}
           onClick={() => handleClick(imageDetails)}
         >
-          <img
-            className="w-full h-48 object-cover "
+          <Image
+            className="w-[400px] h-full object-contain aspect-w-7 aspect-h-3"
             src={imageDetails.image}
             alt={`Image ${index + 1}`}
+            width={500} // Set the desired width
+            height={100} // Set the desired height
           />
 
           <AnimatePresence>

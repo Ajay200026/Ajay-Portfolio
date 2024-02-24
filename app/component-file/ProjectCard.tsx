@@ -1,5 +1,6 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { TbView360 } from "react-icons/tb";
@@ -40,7 +41,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             scrollbarColor: "transparent transparent",
           }}
         >
-          <img className="w-full h-48 object-contain" src={image} alt={title} />
+          <Image
+            className="w-full h-48 object-contain"
+            src={image}
+            alt={title}
+          />
 
           <div className="p-4 text-white">
             <h2 className="text-xl font-semibold mb-2">{title}</h2>

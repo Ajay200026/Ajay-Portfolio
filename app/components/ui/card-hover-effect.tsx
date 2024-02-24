@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { cn } from "../../utils/cn";
@@ -77,7 +78,7 @@ export const Card = ({
       )}
     >
       {image && (
-        <img
+        <Image
           src={image}
           alt=""
           className="object-contain w-[400px] h-[250px] rounded-2xl"

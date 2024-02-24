@@ -22,7 +22,7 @@ export const projects = [
     description:
       "Completed the Full Stack Meta specialization!-This course equips you with the skills to build full-stack Django applications",
     link: "https://coursera.org/share/5e67b3ce5aa22ac9b8c2c6af69b77b6b",
-    image: "/meta.jpg",
+    image: "/Meta.jpg",
   },
   {
     title: "React js",

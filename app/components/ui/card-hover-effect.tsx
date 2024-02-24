@@ -82,6 +82,8 @@ export const Card = ({
           src={image}
           alt=""
           className="object-contain w-[400px] h-[250px] rounded-2xl"
+          width={400} // Specify the width property
+          height={250} // Specify the height property
         />
       )}
 

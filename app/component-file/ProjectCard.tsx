@@ -45,8 +45,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             className="w-full h-48 object-contain"
             src={image}
             alt={title}
+            width={400}
+            height={300}
           />
-
           <div className="p-4 text-white">
             <h2 className="text-xl font-semibold mb-2">{title}</h2>
             <div className="h-16 overflow-y-auto mb-4">{description}</div>
